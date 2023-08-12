@@ -19,7 +19,6 @@ class ViewController: UIViewController {
         
         //What should happen when a non-number button is pressed
         isFinishedTypingNumber = true
-    
     }
 
     
@@ -30,9 +29,11 @@ class ViewController: UIViewController {
             
             if isFinishedTypingNumber == true {
                 displayLabel.text = numValue
+                
                 isFinishedTypingNumber = false
             } else {
                 displayLabel.text = displayLabel.text! + numValue
+                
             }
         }
     
